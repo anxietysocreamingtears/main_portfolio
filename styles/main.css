@@ -94,6 +94,27 @@ textarea {
   opacity: 0.55;
 }
 
+.section::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -80px;
+  height: 220px;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.7), transparent 68%);
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.9s var(--ease-out),
+    transform 0.9s var(--ease-out);
+}
+
+.section.is-active::after {
+  opacity: 0.75;
+  transform: translateY(0);
+}
+
 .section--light {
   background: var(--bg-soft);
 }
@@ -102,6 +123,10 @@ textarea {
   background:
     radial-gradient(circle at top center, rgba(255, 255, 255, 0.62), transparent 32%),
     var(--bg-soft-2);
+}
+
+.section--soft::after {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.82), transparent 68%);
 }
 
 .section-head {
@@ -296,6 +321,10 @@ textarea {
 }
 
 .hero::before {
+  display: none;
+}
+
+.hero::after {
   display: none;
 }
 

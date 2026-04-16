@@ -5,6 +5,7 @@ const yearNode = document.querySelector("[data-year]");
 const contactForm = document.querySelector(".contact-form");
 const footerForm = document.querySelector(".footer-news__form");
 const revealItems = document.querySelectorAll("[data-reveal]");
+const sections = document.querySelectorAll(".section");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const closeMenu = () => {
@@ -134,5 +135,25 @@ if (revealItems.length) {
     );
 
     revealItems.forEach((item) => revealObserver.observe(item));
+  }
+}
+
+if (sections.length) {
+  if (prefersReducedMotion) {
+    sections.forEach((section) => section.classList.add("is-active"));
+  } else {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("is-active", entry.isIntersecting);
+        });
+      },
+      {
+        threshold: 0.18,
+        rootMargin: "-10% 0px -32% 0px"
+      }
+    );
+
+    sections.forEach((section) => sectionObserver.observe(section));
   }
 }
