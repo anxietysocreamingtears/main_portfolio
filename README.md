@@ -1,33 +1,33 @@
 # hugerain recreation
 
-This project is a front-end recreation of [hugerain.net](https://hugerain.net/).
-It was built as a simple static site with plain HTML, CSS and JavaScript.
+Это фронтенд-реконструкция [hugerain.net](https://hugerain.net/).
+Проект собран как простая статическая страница на HTML, CSS и JavaScript.
 
-## What was implemented
+## Что реализовано
 
-- fullscreen hero with video background
-- floating dark menu with expandable links
-- project showcase section
-- services grid with illustrated cards
-- partners grid
-- FAQ block
-- contact form and footer with extra Telegram form
-- responsive layout and small reveal animations
+- полноэкранный hero-блок с видео на фоне
+- плавающее тёмное меню с раскрывающимися ссылками
+- блок с кейсами и проектами
+- секция услуг с иллюстрированными карточками
+- сетка партнёров
+- FAQ-блок
+- форма заявки и footer с дополнительной формой для Telegram
+- адаптивная вёрстка и небольшие reveal-анимации
 
-## How to run
+## Как запустить
 
-You can open `index.html` directly in the browser.
+Можно просто открыть `index.html` в браузере.
 
-If you want to run it as a local server:
+Если нужен локальный сервер:
 
 ```bash
 python -m http.server 4173
 ```
 
-Then open `http://127.0.0.1:4173/`.
+После этого открыть `http://127.0.0.1:4173/`.
 
-## Notes
+## Заметки
 
-- The original repository was empty, so this version was built as a clean static front-end.
-- Some texts and spacing were recreated manually to stay as close as possible.
-- A few visual assets are loaded from the original public Framer CDN to keep the look close to the reference.
+- Изначально репозиторий был пустым, поэтому проект собран как отдельный статический фронтенд.
+- Часть текстов и отступов была восстановлена вручную, чтобы приблизиться к оригиналу.
+- Некоторые визуальные ассеты подгружаются с публичного Framer CDN, чтобы сохранить внешний вид ближе к референсу.
