@@ -6,7 +6,7 @@
   <title>hugerain recreation</title>
   <meta
     name="description"
-    content="Landing page inspired by hugerain.net with showcase, services, partners and contact sections."
+    content="Landing page inspired by the latest live version of hugerain.net."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,19 +19,21 @@
 <body>
   <header class="topbar">
     <div class="shell topbar__inner">
-      <a class="brand" href="#hero" aria-label="Go to top">
+      <a class="brand" href="#hero" aria-label="Перейти к началу">
         <img
           class="brand__icon"
-          src="https://framerusercontent.com/images/a8POi4WwcXiDsP1DC2PMXAyORk.png?width=1080&height=1080"
+          src="https://framerusercontent.com/images/a8POi4WwcXiDsP1DC2PMXAyORk.png?width=1080&amp;height=1080"
           alt=""
         >
         <span class="brand__text">hugerain</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню">
         <span></span>
         <span></span>
       </button>
     </div>
+
     <div class="menu-panel" hidden>
       <div class="shell menu-panel__inner">
         <div class="menu-group">
@@ -40,12 +42,14 @@
           <a href="#whatwe">Чем усиливаем</a>
           <a href="#worked">Где участвовали</a>
         </div>
+
         <div class="menu-group">
           <p class="menu-group__label">Исследуй</p>
           <a href="#products">Наши проекты</a>
           <a href="#faq">FAQ</a>
           <a href="https://t.me/hugerainet" target="_blank" rel="noreferrer">Telegram канал</a>
         </div>
+
         <div class="menu-group">
           <p class="menu-group__label">Контакт</p>
           <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">Написать напрямую</a>
@@ -63,24 +67,27 @@
           muted
           loop
           playsinline
-          poster="https://framerusercontent.com/images/0NdPfp1KepUndwdOF6FtDW6pEaQ.png?width=2048&height=1365"
+          poster="https://framerusercontent.com/images/0NdPfp1KepUndwdOF6FtDW6pEaQ.png?width=2048&amp;height=1365"
         >
           <source src="https://framerusercontent.com/assets/zs7SbYRps3jWP1IznHGH8PAxsGw.mp4" type="video/mp4">
         </video>
       </div>
+
       <div class="hero__shade"></div>
+
       <div class="shell hero__shell">
-        <div class="hero__content" data-reveal>
-          <span class="eyebrow">hugerain studio</span>
-          <h1>
-            Создаём виральные продукты.<br>
+        <div class="hero__content" data-stagger="0.08">
+          <span class="eyebrow" data-reveal="soft">hugerain studio</span>
+          <h1 data-reveal>
+            Создаём виральные продукты.
+            <br>
             И усиливаем <span class="hero__accent">ваши.</span>
           </h1>
-          <p>
-            Инвестируем время, опыт и ресурсы, чтобы улучшить
-            или создать ваш цифровой продукт.
+          <p data-reveal="soft">
+            Инвестируем время, опыт и ресурсы, чтобы улучшить или создать ваш цифровой продукт.
           </p>
-          <div class="hero__actions">
+
+          <div class="hero__actions" data-reveal="soft">
             <a class="button button--primary" href="https://t.me/figmagod" target="_blank" rel="noreferrer">
               Написать напрямую
             </a>
@@ -88,272 +95,378 @@
           </div>
         </div>
 
-        <div class="hero__brands" data-reveal>
-          <span>Glowchams</span>
-          <span>touchskins</span>
-          <span>SKINCHANGER.GG</span>
-          <span>HUGERAIN</span>
+        <div class="hero__brands" data-stagger="0.06">
+          <span data-reveal="card">Glowchams</span>
+          <span data-reveal="card">touchskins</span>
+          <span data-reveal="card">SKINCHANGER.GG</span>
+          <span data-reveal="card">HUGERAIN</span>
         </div>
       </div>
     </section>
 
-    <section class="section section--light showcase" id="how">
+    <section class="section section--light flow" id="how">
       <div class="shell">
-        <div class="section-head">
-          <span class="eyebrow">Наши проекты</span>
-          <h2>Делаем продукты ближе к аудитории и быстрее к росту.</h2>
-          <p class="section-copy">
-            Запускаем с нуля, усиливаем текущие сценарии и ищем
-            рабочие точки роста вместе с командой.
-          </p>
+        <div class="section-head section-head--wide" data-stagger="0.08">
+          <span class="eyebrow" data-reveal="soft">Как работаем</span>
+          <h2 data-reveal>Как мы работаем с продуктами.</h2>
         </div>
 
-        <div class="cases" id="products">
-          <article class="case" data-reveal>
-            <div class="case__copy">
-              <span class="case__tag">Touch Skins</span>
-              <h3>Переупаковали идею в понятный мобильный сценарий.</h3>
-              <p>
-                Продумали подачу, структуру продукта и ключевые
-                пользовательские действия, чтобы проект выглядел
-                цельно и собирал внимание с первого экрана.
-              </p>
-              <div class="case__stats">
-                <div class="case__stat">
-                  <strong>2x</strong>
-                  <span>clearer entry points</span>
-                </div>
-                <div class="case__stat">
-                  <strong>24/7</strong>
-                  <span>product support loop</span>
-                </div>
-              </div>
+        <div class="flow__grid" data-stagger="0.08">
+          <article class="flow-step" data-reveal="card">
+            <span class="flow-step__index">01</span>
+            <h3>Погружаемся в продукт</h3>
+            <p>Разбираемся глубоко в его сути, чтобы понять, где именно можно усилить и приумножить.</p>
+          </article>
+
+          <article class="flow-step" data-reveal="card">
+            <span class="flow-step__index">02</span>
+            <h3>Исследуем рынок</h3>
+            <p>Смотрим на конкурентов и окружение, чтобы понимать, куда и как нужно бить при создании продукта.</p>
+          </article>
+
+          <div class="flow__visual" data-reveal="image">
+            <div class="flow__visual-stage">
+              <img
+                src="https://framerusercontent.com/images/lCKUYkttYAS4QEuKZO5lseigktA.png"
+                alt="hugerain mark"
+              >
             </div>
-            <div class="case__visual case__visual--phones">
+          </div>
+
+          <article class="flow-step" data-reveal="card">
+            <span class="flow-step__index">03</span>
+            <h3>Включаемся в процессы</h3>
+            <p>Работаем рядом с командой и процессами, чтобы усилить самые слабые места продукта.</p>
+          </article>
+
+          <article class="flow-step" data-reveal="card">
+            <span class="flow-step__index">04</span>
+            <h3>Создаём продукт</h3>
+            <p>Собираем новый продукт с нуля или вносим точечные изменения в существующий сценарий.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light products" id="products">
+      <div class="shell">
+        <div class="section-head section-head--wide" data-stagger="0.08">
+          <span class="eyebrow" data-reveal="soft">Наши проекты</span>
+          <h2 data-reveal>Продукты, в которых участвует наша команда.</h2>
+        </div>
+
+        <div class="cases">
+          <article class="case case--reverse">
+            <div class="case__visual case__visual--phones" data-reveal="image">
               <img
                 class="case__phone case__phone--back"
-                src="https://framerusercontent.com/images/HY4n914f0uAa63ki5xpXrzf9g7s.png?width=2048&height=2048"
+                src="https://framerusercontent.com/images/HY4n914f0uAa63ki5xpXrzf9g7s.png?width=2048&amp;height=2048"
                 alt="Touch Skins screen"
               >
               <img
                 class="case__phone case__phone--front"
-                src="https://framerusercontent.com/images/VZS4fPhe3Pp3Kx6mzEyx4clizk.png?width=2048&height=2048"
+                src="https://framerusercontent.com/images/VZS4fPhe3Pp3Kx6mzEyx4clizk.png?width=2048&amp;height=2048"
                 alt="Touch Skins mobile view"
               >
             </div>
-          </article>
 
-          <article class="case case--reverse" data-reveal>
-            <div class="case__copy">
-              <span class="case__tag">Skinchanger.gg</span>
-              <h3>Подсветили сильные стороны продукта и сценарий покупки.</h3>
-              <p>
-                Сфокусировались на восприятии сервиса, структуре
-                контента и общей подаче, чтобы продукт считывался
-                быстрее и выглядел увереннее.
+            <div class="case__copy" data-stagger="0.07">
+              <span class="case__tag" data-reveal="soft">Touch Skins</span>
+              <h3 data-reveal>Touch Skins</h3>
+              <p data-reveal="soft">
+                Программа, которая позволяет локально использовать косметические предметы в игре
+                Standoff 2. Мы участвовали в продуктовой части, в UX и в упаковке, чтобы продукт
+                считывался быстрее и выглядел увереннее.
               </p>
-              <div class="case__stats">
-                <div class="case__stat">
-                  <strong>+UX</strong>
-                  <span>clear navigation</span>
+
+              <div class="case__stats" data-stagger="0.08">
+                <div class="case__stat" data-reveal="card">
+                  <strong>0+</strong>
+                  <span>Пользователей</span>
+                  <small>За 2025 год</small>
                 </div>
-                <div class="case__stat">
-                  <strong>fast</strong>
-                  <span>visual hierarchy</span>
+
+                <div class="case__stat" data-reveal="card">
+                  <strong>0+</strong>
+                  <span>Подписчиков в Telegram</span>
+                  <small>За 2 года</small>
                 </div>
               </div>
             </div>
-            <div class="case__visual case__visual--screen">
+          </article>
+
+          <article class="case">
+            <div class="case__copy" data-stagger="0.07">
+              <span class="case__tag" data-reveal="soft">Skinchanger.gg</span>
+              <h3 data-reveal>Skinchanger.gg</h3>
+              <p data-reveal="soft">
+                Платформа, похожая на Touch Skins, но с другим флоу и отдельным сценарием входа.
+                Мы помогали с подачей, структурой и тем, как продукт ощущается на первом касании.
+              </p>
+
+              <div class="case__stats" data-stagger="0.08">
+                <div class="case__stat" data-reveal="card">
+                  <strong>0+</strong>
+                  <span>Подписчиков в Telegram</span>
+                  <small>За всё время</small>
+                </div>
+
+                <div class="case__stat" data-reveal="card">
+                  <strong>0+</strong>
+                  <span>Пользователей</span>
+                  <small>Участвуют в тестировании</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="case__visual case__visual--screen" data-reveal="image">
               <img
-                src="https://framerusercontent.com/images/0NdPfp1KepUndwdOF6FtDW6pEaQ.png?width=2048&height=1365"
+                src="https://framerusercontent.com/images/0NdPfp1KepUndwdOF6FtDW6pEaQ.png?width=2048&amp;height=1365"
                 alt="Skinchanger.gg preview"
               >
             </div>
           </article>
 
-          <article class="case" data-reveal>
-            <div class="case__copy">
-              <span class="case__tag">Glowchams</span>
-              <h3>В разработке, но уже с понятным продуктовым вектором.</h3>
-              <p>
-                Для новых направлений собираем основу: позиционирование,
-                подачу, первые экраны и задел для дальнейшего запуска.
+          <article class="case case--text">
+            <div class="case__copy" data-stagger="0.07">
+              <span class="case__tag" data-reveal="soft">Glowchams</span>
+              <h3 data-reveal>Glowchams</h3>
+              <p data-reveal="soft">
+                Новый продукт, который мы собираем вместе с командой. Сейчас формируем
+                позиционирование, сценарии и первые шаги к запуску.
               </p>
             </div>
-            <div class="case__visual case__visual--draft">
-              <div class="draft-card">
-                <span>В разработке</span>
-                <strong>Glowchams</strong>
-                <p>Concept, flow and launch prep</p>
-              </div>
-            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light join">
+      <div class="shell join__shell">
+        <div class="section-head section-head--wide" data-stagger="0.08">
+          <span class="eyebrow" data-reveal="soft">Дальше</span>
+          <h2 data-reveal>Это только начало. Давай с нами.</h2>
+          <p class="section-copy" data-reveal="soft">
+            Мы строим продукты вместе с командами, а не со стороны. Если нужен партнёр по развитию,
+            запуску или усилению продукта, давай знакомиться.
+          </p>
+        </div>
+
+        <div class="join__media" data-stagger="0.08">
+          <div class="join__card" data-reveal="image">
+            <img
+              src="https://framerusercontent.com/images/1cxBQvCWA0sxW7IBJmsmUSGJB1I.png?width=1477&amp;height=836"
+              alt="Decorative hugerain graphic"
+            >
+          </div>
+
+          <div class="join__card join__card--offset" data-reveal="image">
+            <img
+              src="https://framerusercontent.com/images/rJrwsVkOuDGKZdsl23LA9drM.png?width=1477&amp;height=836"
+              alt="Decorative hugerain graphic"
+            >
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section section--light services" id="whatwe">
       <div class="shell">
-        <div class="section-head">
-          <span class="eyebrow">Чем усиливаем</span>
-          <h2>Подключаемся там, где продукту не хватает скорости или ясности.</h2>
-          <p class="section-copy">
-            Работаем и как команда запуска, и как внешнее усиление
-            для уже существующего продукта.
-          </p>
+        <div class="section-head section-head--wide" data-stagger="0.08">
+          <span class="eyebrow" data-reveal="soft">Чем усиливаем</span>
+          <h2 data-reveal>Чем мы усиливаем продукты.</h2>
         </div>
 
-        <div class="service-grid">
-          <article class="service-card" data-reveal>
+        <div class="service-grid" data-stagger="0.08">
+          <article class="service-card" data-reveal="card">
             <img
-              src="https://framerusercontent.com/images/1mCdFPCHWH5xVghcH2RFTViX5B4.png?width=2048&height=2048"
-              alt="Audit illustration"
+              src="https://framerusercontent.com/images/1mCdFPCHWH5xVghcH2RFTViX5B4.png?width=2048&amp;height=2048"
+              alt="Аудит продукта"
             >
             <h3>Аудит продукта</h3>
-            <p>Находим слабые места в структуре, подаче и пользовательском пути.</p>
+            <p>Разбираем продукт по косточкам: метрики, UX, экономику. Находим узкие места и быстрые точки роста.</p>
           </article>
 
-          <article class="service-card" data-reveal>
+          <article class="service-card" data-reveal="card">
             <img
-              src="https://framerusercontent.com/images/dQZUvsceuv7bzGrpfDzTbOe43Y.png?width=2048&height=2048"
-              alt="Strategy illustration"
+              src="https://framerusercontent.com/images/dQZUvsceuv7bzGrpfDzTbOe43Y.png?width=2048&amp;height=2048"
+              alt="Стратегия роста"
             >
             <h3>Стратегия роста</h3>
-            <p>Собираем вектор развития и проверяем, где продукт растёт быстрее.</p>
+            <p>Формируем понятный план развития и приоритеты. Определяем действия, которые дадут максимальный эффект.</p>
           </article>
 
-          <article class="service-card" data-reveal>
+          <article class="service-card" data-reveal="card">
             <img
-              src="https://framerusercontent.com/images/tFDdcazxmaK9w1k1N9rCaqyACzo.png?width=2048&height=2048"
-              alt="Design illustration"
+              src="https://framerusercontent.com/images/tFDdcazxmaK9w1k1N9rCaqyACzo.png?width=2048&amp;height=2048"
+              alt="UX и продуктовый дизайн"
             >
             <h3>UX и продуктовый дизайн</h3>
-            <p>Приводим интерфейс в понятную систему без лишнего шума.</p>
+            <p>Упрощаем путь пользователя и повышаем конверсию. Делаем интерфейс логичным, быстрым и понятным.</p>
           </article>
 
-          <article class="service-card" data-reveal>
+          <article class="service-card" data-reveal="card">
             <img
-              src="https://framerusercontent.com/images/gr2TnL0ROwcATzrIyhA9J7NiGVs.png?width=2048&height=2048"
-              alt="Launch illustration"
+              src="https://framerusercontent.com/images/gr2TnL0ROwcATzrIyhA9J7NiGVs.png?width=2048&amp;height=2048"
+              alt="Разработка и запуск"
             >
             <h3>Разработка и запуск</h3>
-            <p>Доводим до рабочего состояния и готовим к выходу в прод.</p>
+            <p>Создаём новые функции или продукт с нуля. Быстро запускаем и доводим до стабильного результата.</p>
           </article>
 
-          <article class="service-card" data-reveal>
+          <article class="service-card" data-reveal="card">
             <img
-              src="https://framerusercontent.com/images/2z1kklz3FuXNUYCr6ix22P1LU.png?width=2048&height=2048"
-              alt="Growth illustration"
+              src="https://framerusercontent.com/images/2z1kklz3FuXNUYCr6ix22P1LU.png?width=2048&amp;height=2048"
+              alt="Рост и масштабирование"
             >
             <h3>Рост и масштабирование</h3>
-            <p>Помогаем расширять продукт без потери фокуса и качества.</p>
+            <p>Оптимизируем процессы, юнит-экономику и каналы роста. Помогаем продукту расти без потери качества.</p>
           </article>
 
-          <article class="service-card" data-reveal>
+          <article class="service-card" data-reveal="card">
             <img
-              src="https://framerusercontent.com/images/wmHrzlQMRPONnvHRWzuH1qGTACA.png?width=2048&height=2048"
-              alt="Partnership illustration"
+              src="https://framerusercontent.com/images/wmHrzlQMRPONnvHRWzuH1qGTACA.png?width=80&amp;height=80"
+              alt="Партнёрство и развитие"
             >
             <h3>Партнёрство и развитие</h3>
-            <p>Подключаемся глубже, если продукту нужна не разовая, а постоянная поддержка.</p>
+            <p>Работаем как часть команды, а не подрядчик. Фокусируемся на долгосрочном результате и прибыли.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--muted partners" id="worked">
+    <section class="section section--soft partners" id="worked">
       <div class="shell">
-        <div class="section-head">
-          <span class="eyebrow">Где участвовали</span>
-          <h2>Проекты и команды, с которыми мы уже работали.</h2>
+        <div class="section-head section-head--wide" data-stagger="0.08">
+          <span class="eyebrow" data-reveal="soft">Где участвовали</span>
+          <h2 data-reveal>Проекты, в которых мы участвовали.</h2>
         </div>
 
-        <div class="partner-grid">
-          <div class="partner-card" data-reveal>SKINCHANGER.GG</div>
-          <div class="partner-card" data-reveal>touchskins</div>
-          <div class="partner-card" data-reveal>metatoken</div>
-          <div class="partner-card" data-reveal>BOOMERANG MEDIA</div>
-          <div class="partner-card" data-reveal>MONEY KINGS</div>
-          <div class="partner-card" data-reveal>CYBER SHOKE</div>
-          <div class="partner-card" data-reveal>FSG</div>
-          <div class="partner-card" data-reveal>metatokens</div>
-          <div class="partner-card" data-reveal>PREMIUMFANS</div>
-          <div class="partner-card" data-reveal>MAGIC RUST</div>
-          <div class="partner-card" data-reveal>Upgrader</div>
-          <div class="partner-card" data-reveal>Kinstant</div>
-          <div class="partner-card" data-reveal>Skinchanger.cc</div>
-          <div class="partner-card" data-reveal>HUGERAIN</div>
-          <div class="partner-card" data-reveal>itemgrad</div>
+        <div class="partner-grid" data-stagger="0.07">
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--tight">SKINCHANGER.GG</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--lower">touchskins</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-stack">
+              <img
+                class="partner-icon partner-icon--coin"
+                src="https://framerusercontent.com/images/t8BnFPyeysrafvuM5ZCxnJXTtyQ.png?width=352&amp;height=352"
+                alt="metatoken"
+              >
+              <div class="partner-wordmark">metatoken</div>
+            </div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-stack">
+              <img
+                class="partner-icon"
+                src="https://framerusercontent.com/images/wmHrzlQMRPONnvHRWzuH1qGTACA.png?width=80&amp;height=80"
+                alt="Boomerang Media"
+              >
+              <div class="partner-wordmark partner-wordmark--small">BOOMERANG MEDIA</div>
+            </div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <img
+              class="partner-logo partner-logo--wide"
+              src="https://framerusercontent.com/images/2BHuzzlZ7UhhOzvwynE9WCCIrQ.png?width=1735&amp;height=216"
+              alt="Money Kings"
+            >
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--wide">CYBER SHOKE</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--fsg">FSG</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--small">metatokens</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--small">PREMIUMFANS</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--small">MAGIC RUST</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark">Upgrader</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark">Kinstant</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--tight">Skinchanger.cc</div>
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <img
+              class="partner-logo"
+              src="https://framerusercontent.com/images/L3sEGE4r4e3NGnsNGF2NNtoBfeo.png?width=2732&amp;height=1364"
+              alt="Hugerain"
+            >
+          </article>
+
+          <article class="partner-card" data-reveal="card">
+            <div class="partner-wordmark partner-wordmark--muted">itemgrad</div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--light" id="faq">
-      <div class="shell">
-        <div class="section-head">
-          <span class="eyebrow">FAQ</span>
-          <h2>Частые вопросы перед стартом работы.</h2>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item" data-reveal>
-            <summary>С кем вы работаете?</summary>
-            <p>С цифровыми продуктами, которым нужен запуск, редизайн, рост или более сильная упаковка.</p>
-          </details>
-
-          <details class="faq-item" data-reveal>
-            <summary>Можно прийти только с идеей?</summary>
-            <p>Да. Поможем собрать основу, определить формат и превратить идею в понятный план действий.</p>
-          </details>
-
-          <details class="faq-item" data-reveal>
-            <summary>Подключаетесь ли вы как внешняя команда?</summary>
-            <p>Да, можем закрыть конкретный участок работ или подключиться к продукту на более длинной дистанции.</p>
-          </details>
-
-          <details class="faq-item" data-reveal>
-            <summary>Как лучше написать вам?</summary>
-            <p>Самый быстрый способ — написать напрямую в Telegram или оставить заявку через форму ниже.</p>
-          </details>
-        </div>
-      </div>
-    </section>
+    <div id="faq" class="faq-anchor" aria-hidden="true"></div>
 
     <section class="section section--light contact" id="form">
       <div class="shell">
-        <div class="contact-card" data-reveal>
+        <div class="contact-card" data-stagger="0.08">
           <div class="section-head contact-card__head">
-            <span class="eyebrow">Оставить заявку</span>
-            <h2>Расскажите коротко о продукте.</h2>
+            <span class="eyebrow" data-reveal="soft">Оставить заявку</span>
+            <h2 data-reveal>Расскажите коротко о продукте.</h2>
           </div>
 
           <form class="contact-form">
-            <label class="field">
-              <span>Telegram</span>
+            <label class="field" data-reveal="soft">
+              <span>Telegram для связи</span>
               <input type="text" name="telegram" placeholder="@username" required>
             </label>
 
-            <label class="field">
-              <span>Product</span>
-              <select name="product">
-                <option value="new">New product</option>
-                <option value="growth">Existing product</option>
-                <option value="audit">Audit only</option>
+            <label class="field" data-reveal="soft">
+              <span>Продукт</span>
+              <select name="product" required>
+                <option value="" selected disabled>Выберите...</option>
+                <option value="new">Новый продукт</option>
+                <option value="existing">Существующий продукт</option>
+                <option value="audit">Только аудит</option>
               </select>
             </label>
 
-            <label class="field field--full">
-              <span>Message</span>
-              <textarea name="message" rows="6" placeholder="Что делаете, на каком этапе и чем хотите усилить продукт?"></textarea>
+            <label class="field field--full" data-reveal="soft">
+              <span>Сообщение</span>
+              <textarea name="message" rows="6" placeholder="Введите..."></textarea>
             </label>
 
-            <button class="button button--dark" type="submit">Оставить заявку</button>
-            <p class="form-note">
-              Мы не гарантируем ответ или фидбек по вашему продукту, по всем
-              вопросам пишите напрямую в телеграм
-              <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">@figmagod</a>
+            <button class="button button--dark" type="submit" data-reveal="soft">Оставить заявку</button>
+
+            <p class="form-note" data-reveal="soft">
+              Мы не гарантируем ответ или фидбек по вашему продукту, по всем вопросам пишите напрямую
+              в телеграм <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">@figmagod</a>
             </p>
-            <p class="form-state" hidden>Thanks, your message was saved locally.</p>
+
+            <p class="form-state" hidden>Заявка сохранена локально. Можно отправить её в Telegram вручную.</p>
           </form>
         </div>
       </div>
@@ -362,39 +475,45 @@
 
   <footer class="footer">
     <div class="shell footer__layout">
-      <div class="footer-brand" data-reveal>
+      <div class="footer-brand" data-stagger="0.08">
         <img
           class="footer-brand__logo"
-          src="https://framerusercontent.com/images/Jyhymgbbq4Tn1h6MlRdK6VygxU.png?width=2732&height=1028"
+          src="https://framerusercontent.com/images/Jyhymgbbq4Tn1h6MlRdK6VygxU.png?width=2732&amp;height=1028"
           alt="hugerain"
+          data-reveal="soft"
         >
-        <div class="footer-news">
+
+        <div class="footer-news" data-reveal="card">
           <div class="footer-news__copy">
-            <h3>Оставь телеграм для связи</h3>
-            <p>Если нет желания оставлять заявку — оставь свой Telegram и мы сами с тобой свяжемся.</p>
+            <h3>Оставь Telegram для связи</h3>
+            <p>Если не хочется заполнять форму, просто оставь Telegram и мы сами напишем тебе.</p>
           </div>
+
           <form class="footer-news__form">
             <input type="text" name="username" placeholder="@username" required>
             <button type="submit">Отправить</button>
           </form>
-          <p class="footer-news__state" hidden>Saved. We will reach out there.</p>
+
+          <p class="footer-news__state" hidden>Контакт сохранён локально.</p>
         </div>
       </div>
 
-      <div class="footer-links" data-reveal>
-        <div class="footer-column">
+      <div class="footer-links" data-stagger="0.08">
+        <div class="footer-column" data-reveal="soft">
           <p>О нас</p>
           <a href="#how">Как работаем?</a>
           <a href="#whatwe">Чем усиливаем?</a>
           <a href="#worked">Где участвовали?</a>
         </div>
-        <div class="footer-column">
+
+        <div class="footer-column" data-reveal="soft">
           <p>Исследуй</p>
           <a href="#products">Наши проекты</a>
           <a href="https://t.me/hugerainet" target="_blank" rel="noreferrer">Telegram канал</a>
           <a href="#faq">FAQ</a>
         </div>
-        <div class="footer-column">
+
+        <div class="footer-column" data-reveal="soft">
           <p>Контакт</p>
           <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">Написать напрямую</a>
           <a href="#form">Оставить заявку</a>
@@ -402,7 +521,7 @@
       </div>
     </div>
 
-    <div class="shell footer__bottom">
+    <div class="shell footer__bottom" data-reveal="soft">
       <a class="footer__telegram" href="https://t.me/hugerainet" target="_blank" rel="noreferrer">Telegram</a>
       <p>© <span data-year></span> hugerain by <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">juteex</a></p>
     </div>
