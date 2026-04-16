@@ -19,7 +19,14 @@
 <body>
   <header class="topbar">
     <div class="shell topbar__inner">
-      <a class="brand" href="#hero">hugerain</a>
+      <a class="brand" href="#hero" aria-label="Go to top">
+        <img
+          class="brand__icon"
+          src="https://framerusercontent.com/images/a8POi4WwcXiDsP1DC2PMXAyORk.png?width=1080&height=1080"
+          alt=""
+        >
+        <span class="brand__text">hugerain</span>
+      </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
         <span></span>
         <span></span>
@@ -28,21 +35,21 @@
     <div class="menu-panel" hidden>
       <div class="shell menu-panel__inner">
         <div class="menu-group">
-          <p class="menu-group__label">About</p>
-          <a href="#how">How we work</a>
-          <a href="#whatwe">What we do</a>
-          <a href="#worked">Partners</a>
+          <p class="menu-group__label">О нас</p>
+          <a href="#how">Как работаем</a>
+          <a href="#whatwe">Чем усиливаем</a>
+          <a href="#worked">Где участвовали</a>
         </div>
         <div class="menu-group">
-          <p class="menu-group__label">Explore</p>
-          <a href="#products">Projects</a>
+          <p class="menu-group__label">Исследуй</p>
+          <a href="#products">Наши проекты</a>
           <a href="#faq">FAQ</a>
-          <a href="https://t.me/hugerainet" target="_blank" rel="noreferrer">Telegram channel</a>
+          <a href="https://t.me/hugerainet" target="_blank" rel="noreferrer">Telegram канал</a>
         </div>
         <div class="menu-group">
-          <p class="menu-group__label">Contact</p>
-          <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">Write directly</a>
-          <a href="#form">Leave request</a>
+          <p class="menu-group__label">Контакт</p>
+          <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">Написать напрямую</a>
+          <a href="#form">Оставить заявку</a>
         </div>
       </div>
     </div>
@@ -50,11 +57,42 @@
 
   <main>
     <section class="hero section" id="hero">
-      <div class="shell">
-        <div class="hero__content">
-          <span class="eyebrow">hugerain</span>
-          <h1>Temporary hero block</h1>
-          <p>Hero section will be added in the next step.</p>
+      <div class="hero__media">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="https://framerusercontent.com/images/0NdPfp1KepUndwdOF6FtDW6pEaQ.png?width=2048&height=1365"
+        >
+          <source src="https://framerusercontent.com/assets/zs7SbYRps3jWP1IznHGH8PAxsGw.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__shade"></div>
+      <div class="shell hero__shell">
+        <div class="hero__content" data-reveal>
+          <span class="eyebrow">hugerain studio</span>
+          <h1>
+            Создаём виральные продукты.<br>
+            И усиливаем <span class="hero__accent">ваши.</span>
+          </h1>
+          <p>
+            Инвестируем время, опыт и ресурсы, чтобы улучшить
+            или создать ваш цифровой продукт.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="https://t.me/figmagod" target="_blank" rel="noreferrer">
+              Написать напрямую
+            </a>
+            <a class="button button--ghost" href="#form">Оставить заявку</a>
+          </div>
+        </div>
+
+        <div class="hero__brands" data-reveal>
+          <span>Glowchams</span>
+          <span>touchskins</span>
+          <span>SKINCHANGER.GG</span>
+          <span>HUGERAIN</span>
         </div>
       </div>
     </section>

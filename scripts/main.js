@@ -20,4 +20,13 @@ if (menuButton && menuPanel) {
       menuPanel.hidden = true;
     });
   });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") {
+      return;
+    }
+
+    menuButton.setAttribute("aria-expanded", "false");
+    menuPanel.hidden = true;
+  });
 }
