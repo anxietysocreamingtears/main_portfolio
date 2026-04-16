@@ -172,7 +172,7 @@ textarea {
 
 .topbar {
   position: fixed;
-  top: 20px;
+  top: 16px;
   left: 0;
   width: 100%;
   z-index: 40;
@@ -182,10 +182,12 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 14px 18px;
-  border: 1px solid var(--line-dark);
-  border-radius: 26px;
+  gap: 18px;
+  width: min(560px, 100%);
+  margin: 0 auto;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
   background: rgba(5, 5, 5, 0.9);
   backdrop-filter: blur(18px);
   color: var(--text-light);
@@ -199,7 +201,7 @@ textarea {
 .topbar.is-scrolled .topbar__inner {
   background: rgba(5, 5, 5, 0.96);
   border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.24);
 }
 
 .brand {
@@ -222,7 +224,7 @@ textarea {
 }
 
 .brand__text {
-  opacity: 0.9;
+  display: none;
 }
 
 .menu-toggle {
@@ -277,6 +279,8 @@ textarea {
 .menu-panel__inner {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(680px, 100%);
+  margin: 0 auto;
   gap: 28px;
   padding: 28px;
   border: 1px solid var(--line-dark);
@@ -355,26 +359,33 @@ textarea {
   min-height: calc(100svh - 130px);
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero__content {
-  max-width: 980px;
-  padding: 124px 0 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 860px;
+  margin: auto 0;
+  padding: 90px 0 102px;
+  text-align: center;
 }
 
 .hero h1 {
-  margin: 18px 0 18px;
-  font-size: clamp(3.3rem, 8vw, 6.4rem);
-  line-height: 0.95;
+  max-width: 860px;
+  margin: 0 0 20px;
+  font-size: clamp(3rem, 6vw, 4.9rem);
+  line-height: 0.98;
   letter-spacing: -0.08em;
 }
 
 .hero p {
-  max-width: 560px;
+  max-width: 520px;
   margin: 0;
   color: var(--text-soft);
-  font-size: 1.05rem;
-  line-height: 1.65;
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
 
 .hero__accent {
@@ -387,8 +398,9 @@ textarea {
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
-  margin-top: 34px;
+  margin-top: 30px;
 }
 
 .button {
@@ -396,11 +408,11 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 54px;
-  padding: 0 24px;
+  min-height: 50px;
+  padding: 0 22px;
   border: 1px solid transparent;
   border-radius: 999px;
-  font-size: 0.96rem;
+  font-size: 0.92rem;
   font-weight: 700;
   transition:
     transform 0.32s var(--ease-out),
@@ -449,6 +461,7 @@ textarea {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
+  width: 100%;
   padding-bottom: 28px;
 }
 
@@ -456,13 +469,13 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 70px;
+  min-height: 58px;
   padding: 0 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.04);
   color: rgba(245, 245, 245, 0.78);
-  font-size: 0.94rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: -0.03em;
   transition:
@@ -475,6 +488,10 @@ textarea {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.14);
+}
+
+.hero .eyebrow {
+  display: none;
 }
 
 .flow {
@@ -1325,18 +1342,28 @@ textarea {
 
   .hero__shell {
     min-height: calc(100svh - 104px);
+    align-items: stretch;
   }
 
   .hero__content {
+    align-items: flex-start;
+    margin: 0;
     padding: 96px 0 56px;
+    text-align: left;
   }
 
   .hero__actions {
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .button {
     width: 100%;
+  }
+
+  .hero h1,
+  .hero p {
+    max-width: 100%;
   }
 
   .hero__brands {
