@@ -292,25 +292,119 @@
       <div class="shell">
         <div class="section-head">
           <span class="eyebrow">FAQ</span>
-          <h2>Questions</h2>
+          <h2>Частые вопросы перед стартом работы.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" data-reveal>
+            <summary>С кем вы работаете?</summary>
+            <p>С цифровыми продуктами, которым нужен запуск, редизайн, рост или более сильная упаковка.</p>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary>Можно прийти только с идеей?</summary>
+            <p>Да. Поможем собрать основу, определить формат и превратить идею в понятный план действий.</p>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary>Подключаетесь ли вы как внешняя команда?</summary>
+            <p>Да, можем закрыть конкретный участок работ или подключиться к продукту на более длинной дистанции.</p>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary>Как лучше написать вам?</summary>
+            <p>Самый быстрый способ — написать напрямую в Telegram или оставить заявку через форму ниже.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="section section--light" id="form">
+    <section class="section section--light contact" id="form">
       <div class="shell">
-        <div class="section-head">
-          <span class="eyebrow">Contact</span>
-          <h2>Leave request</h2>
+        <div class="contact-card" data-reveal>
+          <div class="section-head contact-card__head">
+            <span class="eyebrow">Оставить заявку</span>
+            <h2>Расскажите коротко о продукте.</h2>
+          </div>
+
+          <form class="contact-form">
+            <label class="field">
+              <span>Telegram</span>
+              <input type="text" name="telegram" placeholder="@username" required>
+            </label>
+
+            <label class="field">
+              <span>Product</span>
+              <select name="product">
+                <option value="new">New product</option>
+                <option value="growth">Existing product</option>
+                <option value="audit">Audit only</option>
+              </select>
+            </label>
+
+            <label class="field field--full">
+              <span>Message</span>
+              <textarea name="message" rows="6" placeholder="Что делаете, на каком этапе и чем хотите усилить продукт?"></textarea>
+            </label>
+
+            <button class="button button--dark" type="submit">Оставить заявку</button>
+            <p class="form-note">
+              Мы не гарантируем ответ или фидбек по вашему продукту, по всем
+              вопросам пишите напрямую в телеграм
+              <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">@figmagod</a>
+            </p>
+            <p class="form-state" hidden>Thanks, your message was saved locally.</p>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="shell footer__inner">
-      <p>hugerain</p>
-      <p>© <span data-year></span> hugerain by juteex</p>
+    <div class="shell footer__layout">
+      <div class="footer-brand" data-reveal>
+        <img
+          class="footer-brand__logo"
+          src="https://framerusercontent.com/images/Jyhymgbbq4Tn1h6MlRdK6VygxU.png?width=2732&height=1028"
+          alt="hugerain"
+        >
+        <div class="footer-news">
+          <div class="footer-news__copy">
+            <h3>Оставь телеграм для связи</h3>
+            <p>Если нет желания оставлять заявку — оставь свой Telegram и мы сами с тобой свяжемся.</p>
+          </div>
+          <form class="footer-news__form">
+            <input type="text" name="username" placeholder="@username" required>
+            <button type="submit">Отправить</button>
+          </form>
+          <p class="footer-news__state" hidden>Saved. We will reach out there.</p>
+        </div>
+      </div>
+
+      <div class="footer-links" data-reveal>
+        <div class="footer-column">
+          <p>О нас</p>
+          <a href="#how">Как работаем?</a>
+          <a href="#whatwe">Чем усиливаем?</a>
+          <a href="#worked">Где участвовали?</a>
+        </div>
+        <div class="footer-column">
+          <p>Исследуй</p>
+          <a href="#products">Наши проекты</a>
+          <a href="https://t.me/hugerainet" target="_blank" rel="noreferrer">Telegram канал</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-column">
+          <p>Контакт</p>
+          <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">Написать напрямую</a>
+          <a href="#form">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell footer__bottom">
+      <a class="footer__telegram" href="https://t.me/hugerainet" target="_blank" rel="noreferrer">Telegram</a>
+      <p>© <span data-year></span> hugerain by <a href="https://t.me/figmagod" target="_blank" rel="noreferrer">juteex</a></p>
     </div>
   </footer>
 

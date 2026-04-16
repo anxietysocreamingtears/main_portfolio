@@ -592,22 +592,232 @@ button {
   box-shadow: 0 14px 40px rgba(15, 15, 15, 0.05);
 }
 
+.faq-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.faq-item {
+  padding: 0 24px;
+  border: 1px solid var(--line-light);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 24px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 0 24px;
+  color: rgba(15, 15, 15, 0.68);
+  line-height: 1.7;
+}
+
+.contact {
+  padding-top: 40px;
+}
+
+.contact-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 38px;
+  border: 1px solid var(--line-light);
+  border-radius: 34px;
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-card__head {
+  max-width: none;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.field {
+  display: grid;
+  gap: 10px;
+}
+
+.field span {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field input,
+.field select,
+.field textarea,
+.footer-news__form input,
+.footer-news__form button {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid rgba(15, 15, 15, 0.08);
+  border-radius: 14px;
+  background: #f5f5f5;
+  color: var(--text-dark);
+}
+
+.field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.button--dark {
+  width: 100%;
+  border-color: transparent;
+  background: #111;
+  color: #fff;
+}
+
+.form-note,
+.form-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: rgba(15, 15, 15, 0.6);
+  line-height: 1.7;
+}
+
+.form-note a {
+  font-weight: 600;
+}
+
+.form-state {
+  color: #177245;
+  font-weight: 600;
+}
+
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
 }
 
-.footer__inner {
+.footer__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 40px;
+  padding: 88px 0 48px;
+}
+
+.footer-brand {
+  display: grid;
+  gap: 26px;
+}
+
+.footer-brand__logo {
+  width: min(220px, 100%);
+}
+
+.footer-news {
+  max-width: 420px;
+}
+
+.footer-news__copy h3 {
+  margin: 0 0 10px;
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+}
+
+.footer-news__copy p {
+  margin: 0;
+  color: rgba(245, 245, 245, 0.64);
+  line-height: 1.7;
+}
+
+.footer-news__form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.footer-news__form input,
+.footer-news__form button {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-light);
+}
+
+.footer-news__form button {
+  width: auto;
+  min-width: 126px;
+  font-weight: 600;
+}
+
+.footer-news__state {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.footer-column {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.footer-column p {
+  margin: 0 0 4px;
+  color: rgba(245, 245, 245, 0.5);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-column a,
+.footer__bottom p,
+.footer__telegram {
+  margin: 0;
+  color: rgba(245, 245, 245, 0.72);
+}
+
+.footer__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 36px 0;
+  padding: 28px 0 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer p {
-  margin: 0;
-  color: rgba(245, 245, 245, 0.72);
+.footer__telegram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.footer__bottom a {
+  color: var(--text-light);
 }
 
 @media (max-width: 767px) {
@@ -690,7 +900,30 @@ button {
     border-radius: 22px;
   }
 
-  .footer__inner {
+  .faq-item {
+    padding: 0 18px;
+  }
+
+  .contact-card {
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .contact-form,
+  .footer-links,
+  .footer__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-news__form {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__layout {
+    padding: 72px 0 36px;
+  }
+
+  .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
   }
