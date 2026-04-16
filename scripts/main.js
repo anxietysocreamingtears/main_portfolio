@@ -1,8 +1,20 @@
 const menuButton = document.querySelector(".menu-toggle");
 const menuPanel = document.querySelector(".menu-panel");
+const topbar = document.querySelector(".topbar");
 const yearNode = document.querySelector("[data-year]");
 const contactForm = document.querySelector(".contact-form");
 const footerForm = document.querySelector(".footer-news__form");
+const revealItems = document.querySelectorAll("[data-reveal]");
+
+const closeMenu = () => {
+  if (!menuButton || !menuPanel) {
+    return;
+  }
+
+  menuButton.setAttribute("aria-expanded", "false");
+  menuPanel.hidden = true;
+  document.body.classList.remove("menu-open");
+};
 
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
@@ -14,12 +26,12 @@ if (menuButton && menuPanel) {
 
     menuButton.setAttribute("aria-expanded", String(!isOpen));
     menuPanel.hidden = isOpen;
+    document.body.classList.toggle("menu-open", !isOpen);
   });
 
   menuPanel.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      menuButton.setAttribute("aria-expanded", "false");
-      menuPanel.hidden = true;
+      closeMenu();
     });
   });
 
@@ -28,8 +40,25 @@ if (menuButton && menuPanel) {
       return;
     }
 
-    menuButton.setAttribute("aria-expanded", "false");
-    menuPanel.hidden = true;
+    closeMenu();
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (!(target instanceof Node)) {
+      return;
+    }
+
+    if (menuPanel.hidden) {
+      return;
+    }
+
+    if (menuPanel.contains(target) || menuButton.contains(target)) {
+      return;
+    }
+
+    closeMenu();
   });
 }
 
@@ -59,4 +88,34 @@ if (footerForm) {
 
     footerForm.reset();
   });
+}
+
+if (topbar) {
+  const syncTopbar = () => {
+    topbar.classList.toggle("is-scrolled", window.scrollY > 18);
+  };
+
+  syncTopbar();
+  window.addEventListener("scroll", syncTopbar, { passive: true });
+}
+
+if (revealItems.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.18,
+      rootMargin: "0px 0px -40px 0px"
+    }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
 }
