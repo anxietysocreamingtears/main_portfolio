@@ -78,6 +78,14 @@ button {
   letter-spacing: -0.05em;
 }
 
+.section-copy {
+  max-width: 540px;
+  margin: 18px 0 0;
+  color: rgba(15, 15, 15, 0.68);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -331,6 +339,181 @@ button {
   letter-spacing: -0.02em;
 }
 
+.showcase {
+  padding-top: 130px;
+}
+
+.cases {
+  display: grid;
+  gap: 28px;
+  margin-top: 54px;
+}
+
+.case {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.case--reverse {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+.case--reverse .case__copy {
+  order: 2;
+}
+
+.case--reverse .case__visual {
+  order: 1;
+}
+
+.case__copy,
+.case__visual {
+  min-height: 420px;
+  padding: 34px;
+  border: 1px solid var(--line-light);
+  border-radius: 32px;
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+.case__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.case__tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(15, 15, 15, 0.06);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.case__copy h3 {
+  margin: 20px 0 14px;
+  font-size: clamp(1.9rem, 2.4vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.case__copy p {
+  margin: 0;
+  color: rgba(15, 15, 15, 0.72);
+  line-height: 1.7;
+}
+
+.case__stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.case__stat {
+  padding: 18px;
+  border-radius: 22px;
+  background: #f3f3f3;
+}
+
+.case__stat strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.55rem;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.case__stat span {
+  color: rgba(15, 15, 15, 0.62);
+  font-size: 0.92rem;
+}
+
+.case__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.case__visual--phones {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 143, 47, 0.22), transparent 42%),
+    linear-gradient(180deg, #161616 0%, #0b0b0b 100%);
+}
+
+.case__phone {
+  position: absolute;
+  width: min(320px, 48%);
+  filter: drop-shadow(0 22px 40px rgba(0, 0, 0, 0.35));
+}
+
+.case__phone--back {
+  left: 16%;
+  bottom: -4%;
+  transform: rotate(-8deg);
+}
+
+.case__phone--front {
+  right: 12%;
+  top: 6%;
+  transform: rotate(8deg);
+}
+
+.case__visual--screen {
+  padding: 0;
+  background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+}
+
+.case__visual--screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case__visual--draft {
+  background:
+    radial-gradient(circle at top right, rgba(255, 143, 47, 0.28), transparent 34%),
+    linear-gradient(180deg, #0e0e0e 0%, #050505 100%);
+}
+
+.draft-card {
+  width: min(100%, 360px);
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-light);
+}
+
+.draft-card span {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(245, 245, 245, 0.8);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.draft-card strong {
+  display: block;
+  margin-top: 18px;
+  font-size: 2rem;
+  letter-spacing: -0.06em;
+}
+
+.draft-card p {
+  margin: 10px 0 0;
+  color: rgba(245, 245, 245, 0.62);
+}
+
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
@@ -366,6 +549,10 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .showcase {
+    padding-top: 88px;
+  }
+
   .hero__content {
     padding: 92px 0 52px;
   }
@@ -380,6 +567,35 @@ button {
 
   .hero__brands {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case,
+  .case--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .case--reverse .case__copy,
+  .case--reverse .case__visual {
+    order: initial;
+  }
+
+  .case__copy,
+  .case__visual {
+    min-height: auto;
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .case__visual {
+    min-height: 360px;
+  }
+
+  .case__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .case__phone {
+    width: 48%;
   }
 
   .footer__inner {
